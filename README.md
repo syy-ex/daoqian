@@ -109,7 +109,7 @@
       const base = `尊敬的${teacher}：\n\n首先我想对您说一声真诚的抱歉。\n我在最近的课程中旷课，这样的行为是错误的，给您带来了不便和困扰，我深感愧疚。`;
       const extra = reason? (`\n\n关于原因：${reason}。我知道这不是不是借口，但我希望您能理解我当时的处境。`) : '';
       let closing = '';
-      if(tone === 'formal') closing = `\n\n请您尽管批评教育，我会认真反省并保证不再发生类似情况。\n此致\n敬礼\n\n${student}`;
+      if(tone === 'formal') closing = `\n\n请您尽管批评教育，我一定会认真反省。\n此致\n敬礼\n\n${student}`;
       else if(tone === 'simple') closing = `\n\n抱歉，我会改正，请老师批评。\n\n${student}`;
       else closing = `\n\n我非常后悔这次的行为，请老师严肃批评，我会用实际行动证明我的改变。\n\n${student}`;
       return base + extra + closing;
